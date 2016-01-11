@@ -1,0 +1,5 @@
+# sample_copy_assistant
+
+AtCoderのコンテストページに入力例をクリップボードへコピーするボタンを追加するchrome extentionです。
+
+他のコンテストへの対応やパッケージ化してchrome web storeに置いたりは後々気が向いたらやります。

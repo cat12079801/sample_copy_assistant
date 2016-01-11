@@ -1,0 +1,22 @@
+{
+  "name": "Sample Copy Assistant",
+  "version": "1.0",
+  "description": "Add copy buttons for AtCoder",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.contest.atcoder.jp/tasks/*"
+      ],
+      "js": ["js/clipboard.js-master/dist/clipboard.min.js", "js/jquery-2.2.0.min.js", "js/content_scripts/common.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions" : [
+    "declarativeContent"
+  ],
+  "icons" : {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  },
+  "manifest_version": 2
+}
