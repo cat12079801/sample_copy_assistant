@@ -1,10 +1,22 @@
 $(function(){
-  $('div.io-style').nextAll().filter('div.part:even').each(function(i){
-    $(this).find('pre')
-      .attr('id', 'input-sample-'+(i+1))
-      .addClass('input-sample')
-      .after('<button class="btn btn-primary btn-large" data-clipboard-target="#input-sample-' + (i+1) + '">Copy</button>');
-  });
+  hostname = location.host;
+
+  if(hostname.indexOf('.contest.atcoder.jp') != -1){
+    $('div.io-style').nextAll().filter('div.part:even').each(function(i){
+      $(this).find('pre')
+        .attr('id', 'input-sample-'+(i+1))
+        .addClass('input-sample')
+        .after('<button class="btn btn-primary btn-large" data-clipboard-target="#input-sample-' + (i+1) + '">Copy</button>');
+    });
+  }else if(hostname == 'codeforces.com'){
+    $('div.input').each(function(i){
+      $(this).find('pre')
+        .attr('id', 'input-sample-'+(i+1))
+        .addClass('input-sample');
+      $(this).find('div.title')
+        .append('<button class="btn" data-clipboard-target="#input-sample-' + (i+1) + '">Copy</button>');
+    });
+  }
 });
 
 var clipboard = new Clipboard('.btn');
