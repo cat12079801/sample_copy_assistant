@@ -1,0 +1,31 @@
+pre.input-sample {
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+pre.input-sample.success_animating {
+  animation: copy_success 1s;
+}
+
+pre.input-sample.failed_animating {
+  animation: copy_failed 1s;
+}
+
+@keyframes copy_success {
+  0% {
+    background-color: #58FA82;
+  }
+  100% {
+    background-color: #f5f5f5;
+  }
+}
+
+@keyframes copy_failed {
+  0% {
+    background-color: #FF0040;
+  }
+  100% {
+    background-color: #f5f5f5;
+  }
+}

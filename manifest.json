@@ -8,6 +8,7 @@
         "http://*.contest.atcoder.jp/tasks/*"
       ],
       "js": ["js/clipboard.js-master/dist/clipboard.min.js", "js/jquery-2.2.0.min.js", "js/content_scripts/common.js"],
+      "css": ["css/sample_copy_assistant.css"],
       "run_at": "document_end"
     }
   ],
