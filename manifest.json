@@ -1,7 +1,7 @@
 {
   "name": "Sample Copy Assistant",
   "version": "1.0",
-  "description": "Add copy buttons for AtCoder",
+  "description": "Add copy buttons for Programming Contest",
   "content_scripts": [
     {
       "matches": [
